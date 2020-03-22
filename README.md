@@ -1,5 +1,6 @@
 # ScreenCord: Lite Screen Recorder
-A simple screen recorder built with Electron's desktopCapturer
+A simple screen recorder built with Electron's desktopCapturer  
+Download it for Windows: [zip](http://puu.sh/FnFZk/90f49226da.zip)
 
 ## Build pre-requisites
 1. `npm` must be installed
