@@ -1,4 +1,4 @@
-# Mute-Record
+# Lite Screen Recorder
 A simple screen recorder built with Electron
 
 ## To install
