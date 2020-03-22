@@ -1,7 +1,6 @@
 # Mute-Record
 A simple screen recorder built with Electron
 
-
 ## To install
 1. Create a blank Electron app with `npx create-electron-app app-name`   
 2. `git clone` this branch into a sibling directory  
@@ -11,3 +10,5 @@ A simple screen recorder built with Electron
 6. Run `npm start` to start the app, or `npm run make` to build an executable
 
 Note: The outputted executable might not be treated nicely by anti-virus programs
+
+Custom toolbar package: https://www.npmjs.com/package/custom-electron-titlebar
