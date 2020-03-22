@@ -4,13 +4,6 @@ const { writeFile } = require('fs');
 
 const { dialog, Menu } = remote;
 
-//Customize window color
-const customTitlebar = require('custom-electron-titlebar');
- 
-new customTitlebar.Titlebar({
-    backgroundColor: customTitlebar.Color.fromHex('#333333')
-});
-
 // Global state
 let mediaRecorder; // MediaRecorder instance to capture footage
 const recordedChunks = [];
