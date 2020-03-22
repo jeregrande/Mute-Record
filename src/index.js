@@ -12,6 +12,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     frame: false,
+    icon: "src/favicon.ico",
     webPreferences: {
       nodeIntegration: true,
       devTools: false,
