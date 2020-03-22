@@ -4,6 +4,13 @@ const { writeFile } = require('fs');
 
 const { dialog, Menu } = remote;
 
+//Customize window color
+const customTitlebar = require('custom-electron-titlebar');
+ 
+new customTitlebar.Titlebar({
+    backgroundColor: customTitlebar.Color.fromHex('#333333')
+});
+
 // Global state
 let mediaRecorder; // MediaRecorder instance to capture footage
 const recordedChunks = [];
@@ -54,11 +61,14 @@ async function selectSource(source) {
   videoSelectBtn.innerText = source.name;
 
   const constraints = {
-    audio: false,
+    audio: {
+      mandatory: {
+        chromeMediaSource: 'desktop'
+      }
+    },
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
-        chromeMediaSourceId: source.id
       }
     }
   };
@@ -69,6 +79,7 @@ async function selectSource(source) {
 
   // Preview the source in a video element
   videoElement.srcObject = stream;
+  videoElement.muted = true;
   videoElement.play();
 
   // Create the Media Recorder
