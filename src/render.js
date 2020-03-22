@@ -62,6 +62,7 @@ async function selectSource(source) {
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
+        chromeMediaSourceId: source.id
       }
     }
   };
