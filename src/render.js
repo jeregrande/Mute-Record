@@ -61,11 +61,14 @@ async function selectSource(source) {
   videoSelectBtn.innerText = source.name;
 
   const constraints = {
-    audio: false,
+    audio: {
+      mandatory: {
+        chromeMediaSource: 'desktop'
+      }
+    },
     video: {
       mandatory: {
         chromeMediaSource: 'desktop',
-        chromeMediaSourceId: source.id
       }
     }
   };
@@ -76,6 +79,7 @@ async function selectSource(source) {
 
   // Preview the source in a video element
   videoElement.srcObject = stream;
+  videoElement.muted = true;
   videoElement.play();
 
   // Create the Media Recorder
