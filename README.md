@@ -1,11 +1,11 @@
 # ScreenCord: Lite Screen Recorder
 A simple screen recorder built with Electron's desktopCapturer
 
-## Installation pre-requisites
+## Build pre-requisites
 1. `npm` must be installed
 2. Electron must be installed: `npm install electron -g`
 
-## To install
+## To build
 1. Create a blank Electron app with `npx create-electron-app app-name`   
 2. `git clone` this branch into a sibling directory  
 3. Copy the content from within the cloned directory into the `app-name` directory  
