@@ -1,8 +1,8 @@
 {
-  "name": "screencord",
-  "productName": "screencord",
+  "name": "ScreenCord",
+  "productName": "ScreenCord",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A lite screen recorder",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
