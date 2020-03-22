@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+#bodyTitle {
+  color: #eeeeee;
+}
+
 video {
   width: 90%;
   display: block;

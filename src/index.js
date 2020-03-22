@@ -11,18 +11,15 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    frame: false,
     webPreferences: {
       nodeIntegration: true,
-      devTools: false,
+      devTools: false
       }
   });
 
-
-
   // Hide the menu
   mainWindow.removeMenu();
-
+  
   // Load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 

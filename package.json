@@ -45,7 +45,6 @@
     }
   },
   "dependencies": {
-    "custom-electron-titlebar": "^3.2.2-hotfix62",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
