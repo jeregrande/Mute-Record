@@ -1,5 +1,5 @@
-# Lite Screen Recorder
-A simple screen recorder built with Electron
+# ScreenCord: Lite Screen Recorder
+A simple screen recorder built with Electron's desktopCapturer
 
 ## To install
 1. Create a blank Electron app with `npx create-electron-app app-name`   
